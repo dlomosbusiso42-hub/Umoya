@@ -110,7 +110,7 @@ export default function ContactSection() {
                 <label className="text-white/60 text-xs uppercase tracking-wide block mb-2">Organisation (optional)</label>
                 <input
                   type="text"
-                  placeholder="Healthcare Facility / NGO"
+                  placeholder="NGO"
                   className="w-full bg-white/10 border border-white/15 rounded-xl px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-primary/60 transition-colors"
                 />
               </div>
