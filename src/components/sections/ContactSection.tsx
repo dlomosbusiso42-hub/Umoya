@@ -85,7 +85,7 @@ export default function ContactSection() {
                   <label className="text-white/60 text-xs uppercase tracking-wide block mb-2">First Name</label>
                   <input
                     type="text"
-                    placeholder="John"
+                    placeholder="Jacob"
                     className="w-full bg-white/10 border border-white/15 rounded-xl px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-primary/60 transition-colors"
                   />
                 </div>
@@ -93,7 +93,7 @@ export default function ContactSection() {
                   <label className="text-white/60 text-xs uppercase tracking-wide block mb-2">Last Name</label>
                   <input
                     type="text"
-                    placeholder="Doe"
+                    placeholder="Smith"
                     className="w-full bg-white/10 border border-white/15 rounded-xl px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-primary/60 transition-colors"
                   />
                 </div>
@@ -102,7 +102,7 @@ export default function ContactSection() {
                 <label className="text-white/60 text-xs uppercase tracking-wide block mb-2">Email</label>
                 <input
                   type="email"
-                  placeholder="john@hospital.co.za"
+                  placeholder="Jacob17@gmail.com"
                   className="w-full bg-white/10 border border-white/15 rounded-xl px-4 py-3 text-white placeholder-white/30 text-sm focus:outline-none focus:border-primary/60 transition-colors"
                 />
               </div>
