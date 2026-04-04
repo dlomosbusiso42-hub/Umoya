@@ -263,68 +263,38 @@ export default function ProductsSection() {
             </div>
           </div>
 
-          {/* Other products */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {products.slice(2, 3).map((p) => {
-              const Icon = p.icon;
-              return (
-                <div
-                  key={p.name}
-                  className="bg-card rounded-2xl border border-border p-8 card-hover"
-                >
-                  <div className="flex items-start justify-between mb-5">
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">
-                      <Icon className="w-6 h-6 text-primary" />
-                    </div>
-                    <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold border ${p.badgeColor}`}>
-                      {p.badge}
-                    </span>
-                  </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-1">{p.name}</h3>
-                  <p className="text-primary text-sm font-medium mb-3">{p.tagline}</p>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-5">{p.description}</p>
-                  {p.image && (
-                    <div className="mb-5 rounded-xl border border-border overflow-hidden bg-white">
-                      <img
-                        src={p.image}
-                        alt={`${p.name} product`}
-                        loading="lazy"
-                        className="w-full h-48 object-cover"
-                      />
-                    </div>
-                  )}
-                  {p.brochureLink && (
-                    <p className="mb-5">
-                      <a
-                        href={p.brochureLink}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-primary underline hover:text-primary/80 text-sm"
-                      >
-                        Download the {p.name} brochure
-                      </a>
-                    </p>
-                  )}
-                  {p.brochureLink && (
-                    <div className="mb-5 rounded-xl border border-border overflow-hidden bg-white">
-                      <iframe
-                        src={p.brochureLink}
-                        title={`${p.name} brochure preview`}
-                        className="w-full h-[320px]"
-                      />
-                    </div>
-                  )}
-                  <ul className="space-y-1.5">
-                    {p.features.map((f) => (
-                      <li key={f} className="flex items-center gap-2 text-sm text-foreground">
-                        <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                        {f}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              );
-            })}
+          {/* OptiRamp — featured layout */}
+          <div className="grid lg:grid-cols-2 gap-10 items-center bg-card rounded-3xl border border-border p-8 md:p-12 shadow-lg">
+            <div>
+              <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold border ${products[2].badgeColor} mb-4`}>
+                {products[2].badge}
+              </span>
+              <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
+                {products[2].name}
+              </h3>
+              <p className="text-primary font-medium mb-4">{products[2].tagline}</p>
+              <p className="text-muted-foreground leading-relaxed mb-6">{products[2].description}</p>
+              <ul className="space-y-2 mb-8">
+                {products[2].features.map((f) => (
+                  <li key={f} className="flex items-center gap-2 text-sm text-foreground">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2">
+                Learn More <ArrowRight className="w-4 h-4" />
+              </Button>
+            </div>
+            <div className="relative flex flex-col gap-4">
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-2xl blur-xl pointer-events-none" />
+              <img
+                src={products[2].image}
+                alt="OptiRamp"
+                loading="lazy"
+                className="relative rounded-2xl w-full object-cover shadow-xl border border-border"
+              />
+            </div>
           </div>
         </div>
 
