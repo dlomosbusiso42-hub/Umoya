@@ -1,4 +1,4 @@
-import { Mail, Facebook, Linkedin, Youtube, Wind } from "lucide-react";
+import { Mail, Wind } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function ContactSection() {
@@ -48,26 +48,6 @@ export default function ContactSection() {
               </a>
             </div>
 
-            {/* Socials */}
-            <div className="flex items-center gap-3 mt-8">
-              <p className="text-white/40 text-sm">Follow us:</p>
-              {[
-                { icon: Facebook, href: "https://www.facebook.com/umoyaproject/", label: "Facebook" },
-                { icon: Linkedin, href: "https://www.linkedin.com/company/umoya-project/", label: "LinkedIn" },
-                { icon: Youtube, href: "https://www.youtube.com/channel/UCw4VFNiIgUWUbKvOj-ArZcQ", label: "YouTube" },
-              ].map(({ icon: Icon, href, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={label}
-                  className="w-10 h-10 rounded-lg bg-white/10 border border-white/10 flex items-center justify-center hover:bg-primary/20 hover:border-primary/40 transition-colors"
-                >
-                  <Icon className="w-4 h-4 text-white/70" />
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Right — Contact form */}

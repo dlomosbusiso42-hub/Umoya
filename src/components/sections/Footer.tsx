@@ -1,5 +1,5 @@
 import { NavLink } from "@/components/NavLink";
-import { Wind, Facebook, Linkedin, Youtube, Mail } from "lucide-react";
+import { Wind, Mail } from "lucide-react";
 
 export default function Footer() {
   const links = [
@@ -65,23 +65,6 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-            <div className="flex items-center gap-2 mt-5">
-              {[
-                { icon: Facebook, href: "https://www.facebook.com/umoyaproject/" },
-                { icon: Linkedin, href: "https://www.linkedin.com/company/umoya-project/" },
-                { icon: Youtube, href: "https://www.youtube.com/channel/UCw4VFNiIgUWUbKvOj-ArZcQ" },
-              ].map(({ icon: Icon, href }) => (
-                <a
-                  key={href}
-                  href={href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-8 h-8 rounded-lg bg-orange-50 flex items-center justify-center hover:bg-orange-100 hover:text-orange-700 transition-colors"
-                >
-                  <Icon className="w-4 h-4 text-orange-900" />
-                </a>
-              ))}
-            </div>
           </div>
         </div>
 
