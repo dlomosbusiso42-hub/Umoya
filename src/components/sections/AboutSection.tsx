@@ -68,6 +68,31 @@ export default function AboutSection() {
             </div>
           </div>
         </div>
+
+        <div className="mt-20">
+          <div className="flex items-center gap-3 mb-4">
+            <span className="h-px w-12 bg-primary" />
+            <span className="text-primary text-sm font-semibold uppercase tracking-widest">Watch More</span>
+          </div>
+          <div className="bg-card rounded-3xl border border-border p-6 md:p-8 shadow-lg">
+            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
+              See Umoya In Action
+            </h3>
+            <p className="text-muted-foreground leading-relaxed mb-6 max-w-3xl">
+              Learn more about the vision, context and medical innovation behind Umoya through this featured video.
+            </p>
+            <div className="rounded-2xl overflow-hidden border border-border bg-black shadow-xl aspect-video">
+              <iframe
+                src="https://www.youtube.com/embed/GdaljnJ82Cs"
+                title="Umoya video"
+                className="w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
