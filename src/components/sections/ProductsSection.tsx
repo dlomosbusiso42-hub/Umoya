@@ -1,5 +1,6 @@
 import oxeraProduct from "@/assets/oxera-product.jpg";
 import oxeraDevice from "@/assets/oxera-device-bg.png";
+import oxygenPlant from "@/assets/Oxygen Plant.jpg";
 import { Wind, Baby, TrendingUp, Factory, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -66,7 +67,7 @@ const products = [
       "Complete installation support",
       "Project management included",
     ],
-    image: null,
+    image: oxygenPlant,
     badge: "Available",
     badgeColor: "bg-primary/20 text-primary border-primary/30",
   },
