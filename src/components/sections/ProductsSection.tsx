@@ -28,6 +28,7 @@ const products = [
     tagline: "Maternal Healthcare Solution",
     description:
       "A dedicated maternal healthcare product addressing critical gaps in obstetric and neonatal care within low-resource environments. Designed to improve outcomes for mothers and newborns where sophisticated equipment is unavailable.",
+    brochureLink: "/MaternaWell-description-and-specification-Nov25.pdf",
     features: [
       "Maternal & neonatal care",
       "Affordable & portable",
@@ -44,6 +45,7 @@ const products = [
     tagline: "Oxygen Optimisation",
     description:
       "A solution focused on optimising oxygen delivery and usage efficiency in clinical settings. Critical for environments where oxygen supply is constrained — addressing one of the biggest challenges identified during the COVID-19 pandemic.",
+    brochureLink: null,
     features: [
       "Oxygen delivery optimisation",
       "Compatible with existing infrastructure",
@@ -60,6 +62,7 @@ const products = [
     tagline: "PSA Oxygen Generation",
     description:
       "A complete oxygen generation infrastructure solution designed for healthcare facilities requiring on-site oxygen production. Our Industrial Oxygen Plant delivers cost-effective, reliable oxygen supply through pressure swing adsorption (PSA) technology, eliminating dependence on oxygen cylinders and reducing operational costs.",
+    brochureLink: null,
     features: [
       "On-site oxygen generation",
       "PSA technology",
@@ -158,6 +161,18 @@ export default function ProductsSection() {
                   <h3 className="text-2xl font-bold text-foreground mb-1">{p.name}</h3>
                   <p className="text-primary text-sm font-medium mb-3">{p.tagline}</p>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-5">{p.description}</p>
+                  {p.brochureLink && (
+                    <p className="mb-5">
+                      <a
+                        href={p.brochureLink}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-primary underline hover:text-primary/80 text-sm"
+                      >
+                        Download the {p.name} brochure
+                      </a>
+                    </p>
+                  )}
                   <ul className="space-y-1.5">
                     {p.features.map((f) => (
                       <li key={f} className="flex items-center gap-2 text-sm text-foreground">
