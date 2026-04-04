@@ -12,6 +12,7 @@ const products = [
     description:
       "Our first and flagship commercial product. The OxERA™ is a non-invasive respiratory support device designed to assist patients with breathing difficulties. It bridges the gap in respiratory therapy for resource-constrained healthcare facilities across Africa and beyond.",
     brochureLink: "/OxERA-sales-clinical-brochure.pdf",
+    clinicalLink: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9121766/#sec0003",
     features: [
       "CPAP / non-invasive ventilation",
       "Designed for low-resource settings",
@@ -118,6 +119,16 @@ export default function ProductsSection() {
                   className="text-primary underline hover:text-primary/80"
                 >
                   Download the OxERA brochure
+                </a>
+              </p>
+              <p className="mb-6">
+                <a
+                  href={products[0].clinicalLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-primary underline hover:text-primary/80"
+                >
+                  View OxERA clinical article
                 </a>
               </p>
               <div className="mb-8 rounded-xl border border-border overflow-hidden bg-white">
