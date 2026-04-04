@@ -10,6 +10,7 @@ const products = [
     tagline: "Flagship Respiratory Device",
     description:
       "Our first and flagship commercial product. The OxERA™ is a non-invasive respiratory support device designed to assist patients with breathing difficulties. It bridges the gap in respiratory therapy for resource-constrained healthcare facilities across Africa and beyond.",
+    brochureLink: "file:///C:/Users/nzalo/Downloads/OxERA%20sales%20clinical%20brochure%20PC%20version%204.pdf",
     features: [
       "CPAP / non-invasive ventilation",
       "Designed for low-resource settings",
@@ -103,7 +104,17 @@ export default function ProductsSection() {
                 {products[0].name}
               </h3>
               <p className="text-primary font-medium mb-4">{products[0].tagline}</p>
-              <p className="text-muted-foreground leading-relaxed mb-6">{products[0].description}</p>
+              <p className="text-muted-foreground leading-relaxed mb-3">{products[0].description}</p>
+              <p className="mb-6">
+                <a
+                  href={products[0].brochureLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-primary underline hover:text-primary/80"
+                >
+                  Download the OxERA brochure
+                </a>
+              </p>
               <ul className="space-y-2 mb-8">
                 {products[0].features.map((f) => (
                   <li key={f} className="flex items-center gap-2 text-sm text-foreground">
