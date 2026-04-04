@@ -1,5 +1,4 @@
 import oxeraProduct from "@/assets/oxera-product.jpg";
-import oxeraDevice from "@/assets/oxera-device-bg.png";
 import oxygenPlant from "@/assets/Oxygen Plant.jpg";
 import { Wind, Baby, TrendingUp, Factory, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -120,14 +119,8 @@ export default function ProductsSection() {
             <div className="relative flex flex-col gap-4">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-2xl blur-xl pointer-events-none" />
               <img
-                src={oxeraDevice}
-                alt="OxERA device worn by patient"
-                loading="lazy"
-                className="relative rounded-2xl w-full object-contain bg-white shadow-xl border border-border"
-              />
-              <img
                 src={oxeraProduct}
-                alt="OxERA device diagram"
+                alt="OxERA respiratory device"
                 loading="lazy"
                 className="relative rounded-2xl w-full object-cover shadow-xl border border-border"
               />
