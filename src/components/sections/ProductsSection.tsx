@@ -1,5 +1,6 @@
 import oxeraProduct from "@/assets/oxera-product.jpg";
 import maternaWellProduct from "@/assets/MartenaWell.png";
+import optiRampProduct from "@/assets/Opti-Ramp.png";
 import oxygenPlant from "@/assets/Oxygen Plant.jpg";
 import { Wind, Baby, TrendingUp, Factory, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -55,7 +56,7 @@ const products = [
       "Real-time monitoring",
       "Scalable deployment",
     ],
-    image: null,
+    image: optiRampProduct,
     badge: "Available",
     badgeColor: "bg-primary/20 text-primary border-primary/30",
   },
