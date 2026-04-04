@@ -5,6 +5,7 @@ import { NavLink } from "@/components/NavLink";
 import umoyaLogo from "@/assets/umoya-logo.png";
 
 const navLinks = [
+  { label: "Home", to: "/" },
   { label: "About", to: "/about" },
   { label: "Products", to: "/products" },
   { label: "Impact", to: "/impact" },
@@ -32,13 +33,10 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <NavLink
-          to="/"
-          className="flex items-center gap-3 text-orange-900 font-semibold text-lg hover:opacity-90 transition-opacity"
-        >
+        <div className="flex items-center gap-3">
           <img src={umoyaLogo} alt="Umoya" className="h-9 w-auto" />
-          UMOYA
-        </NavLink>
+          <span className="text-orange-900 font-semibold text-lg">UMOYA</span>
+        </div>
 
         <nav className="hidden md:flex items-center gap-2">
           {navLinks.map((link) => (
