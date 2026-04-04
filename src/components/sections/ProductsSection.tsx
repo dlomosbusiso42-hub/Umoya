@@ -1,6 +1,7 @@
 import oxeraProduct from "@/assets/oxera-product.jpg";
 import oxeraDevice from "@/assets/oxera-device-bg.png";
-import { Wind, Baby, TrendingUp, ArrowRight } from "lucide-react";
+import industrialOxygenPlant from "@/assets/industrial-oxygen-plant.jpg";
+import { Wind, Baby, TrendingUp, Factory, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const products = [
@@ -50,6 +51,23 @@ const products = [
       "Scalable deployment",
     ],
     image: null,
+    badge: "Available",
+    badgeColor: "bg-primary/20 text-primary border-primary/30",
+  },
+  {
+    icon: Factory,
+    name: "Industrial Oxygen Plant",
+    tagline: "PSA Oxygen Generation",
+    description:
+      "A complete oxygen generation infrastructure solution designed for healthcare facilities requiring on-site oxygen production. Our Industrial Oxygen Plant delivers cost-effective, reliable oxygen supply through pressure swing adsorption (PSA) technology, eliminating dependence on oxygen cylinders and reducing operational costs.",
+    features: [
+      "On-site oxygen generation",
+      "PSA technology",
+      "Low maintenance operation",
+      "Complete installation support",
+      "Project management included",
+    ],
+    image: industrialOxygenPlant,
     badge: "Available",
     badgeColor: "bg-primary/20 text-primary border-primary/30",
   },
@@ -117,7 +135,7 @@ export default function ProductsSection() {
           </div>
 
           {/* Other products */}
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {products.slice(1).map((p) => {
               const Icon = p.icon;
               return (
