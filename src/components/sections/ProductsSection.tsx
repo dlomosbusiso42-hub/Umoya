@@ -1,5 +1,4 @@
 import oxeraProduct from "@/assets/oxera-product.jpg";
-import oxeraDevice from "@/assets/oxera-device-bg.png";
 import oxygenPlant from "@/assets/Oxygen Plant.jpg";
 import { Wind, Baby, TrendingUp, Factory, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
