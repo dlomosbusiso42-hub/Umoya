@@ -10,7 +10,7 @@ const products = [
     tagline: "Flagship Respiratory Device",
     description:
       "Our first and flagship commercial product. The OxERA™ is a non-invasive respiratory support device designed to assist patients with breathing difficulties. It bridges the gap in respiratory therapy for resource-constrained healthcare facilities across Africa and beyond.",
-    brochureLink: "file:///C:/Users/nzalo/Downloads/OxERA%20sales%20clinical%20brochure%20PC%20version%204.pdf",
+    brochureLink: "/OxERA-sales-clinical-brochure.pdf",
     features: [
       "CPAP / non-invasive ventilation",
       "Designed for low-resource settings",
