@@ -228,9 +228,43 @@ export default function ProductsSection() {
             </div>
           </div>
 
+          {/* Industrial Oxygen Plant — featured layout */}
+          <div className="grid lg:grid-cols-2 gap-10 items-center bg-card rounded-3xl border border-border p-8 md:p-12 shadow-lg">
+            <div>
+              <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold border ${products[3].badgeColor} mb-4`}>
+                {products[3].badge}
+              </span>
+              <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
+                {products[3].name}
+              </h3>
+              <p className="text-primary font-medium mb-4">{products[3].tagline}</p>
+              <p className="text-muted-foreground leading-relaxed mb-6">{products[3].description}</p>
+              <ul className="space-y-2 mb-8">
+                {products[3].features.map((f) => (
+                  <li key={f} className="flex items-center gap-2 text-sm text-foreground">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2">
+                Learn More <ArrowRight className="w-4 h-4" />
+              </Button>
+            </div>
+            <div className="relative flex flex-col gap-4">
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-2xl blur-xl pointer-events-none" />
+              <img
+                src={products[3].image}
+                alt="Industrial Oxygen Plant"
+                loading="lazy"
+                className="relative rounded-2xl w-full object-cover shadow-xl border border-border"
+              />
+            </div>
+          </div>
+
           {/* Other products */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {products.slice(2).map((p) => {
+            {products.slice(2, 3).map((p) => {
               const Icon = p.icon;
               return (
                 <div
