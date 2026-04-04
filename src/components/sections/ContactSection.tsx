@@ -23,27 +23,27 @@ export default function ContactSection() {
             {/* Contact info */}
             <div className="space-y-4">
               <a
-                href="mailto:umoyavent@gmail.com"
+                href="mailto:enquires@umoya.org.za"
                 className="flex items-center gap-4 p-4 bg-white/5 border border-white/10 rounded-xl hover:border-primary/40 hover:bg-white/8 transition-all group"
               >
                 <div className="w-10 h-10 rounded-lg bg-primary/20 border border-primary/30 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-white/50 text-xs uppercase tracking-wide">Email</p>
-                  <p className="text-white font-medium">umoyavent@gmail.com</p>
+                  <p className="text-white/50 text-xs uppercase tracking-wide">Partner Enquiries</p>
+                  <p className="text-white font-medium">enquires@umoya.org.za</p>
                 </div>
               </a>
               <a
-                href="mailto:admin@umoya.org.za"
+                href="mailto:info@umoya.org.za"
                 className="flex items-center gap-4 p-4 bg-white/5 border border-white/10 rounded-xl hover:border-primary/40 hover:bg-white/8 transition-all group"
               >
                 <div className="w-10 h-10 rounded-lg bg-primary/20 border border-primary/30 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
                   <Mail className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-white/50 text-xs uppercase tracking-wide">Admin Email</p>
-                  <p className="text-white font-medium">admin@umoya.org.za</p>
+                  <p className="text-white/50 text-xs uppercase tracking-wide">Quotes & Customer Enquiries</p>
+                  <p className="text-white font-medium">info@umoya.org.za</p>
                 </div>
               </a>
             </div>
@@ -76,7 +76,7 @@ export default function ContactSection() {
             <form
               onSubmit={(e) => {
                 e.preventDefault();
-                window.location.href = "mailto:umoyavent@gmail.com";
+                window.location.href = "mailto:info@umoya.org.za";
               }}
               className="space-y-5"
             >

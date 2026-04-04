@@ -53,15 +53,15 @@ export default function Footer() {
             <h4 className="text-orange-900 font-semibold text-sm uppercase tracking-wide mb-4">Contact</h4>
             <ul className="space-y-3">
               <li>
-                <a href="mailto:umoyavent@gmail.com" className="text-slate-600 hover:text-orange-700 text-sm transition-colors flex items-center gap-2">
+                <a href="mailto:enquires@umoya.org.za" className="text-slate-600 hover:text-orange-700 text-sm transition-colors flex items-center gap-2">
                   <Mail className="w-3.5 h-3.5" />
-                  umoyavent@gmail.com
+                  enquires@umoya.org.za
                 </a>
               </li>
               <li>
-                <a href="mailto:admin@umoya.org.za" className="text-slate-600 hover:text-orange-700 text-sm transition-colors flex items-center gap-2">
+                <a href="mailto:info@umoya.org.za" className="text-slate-600 hover:text-orange-700 text-sm transition-colors flex items-center gap-2">
                   <Mail className="w-3.5 h-3.5" />
-                  admin@umoya.org.za
+                  info@umoya.org.za
                 </a>
               </li>
             </ul>

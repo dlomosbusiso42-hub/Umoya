@@ -9,9 +9,9 @@ const products = [
   {
     icon: Wind,
     name: "OxERA™",
-    tagline: "Flagship Respiratory Device",
+    tagline: "Respiratory Support Device",
     description:
-      "Our first and flagship commercial product. The OxERA™ is a non-invasive respiratory support device designed to assist patients with breathing difficulties. It bridges the gap in respiratory therapy for resource-constrained healthcare facilities across Africa and beyond.",
+      "The OxERA™ is a non-invasive respiratory support device designed to assist patients with breathing difficulties. It bridges the gap in respiratory therapy for resource-constrained healthcare facilities across Africa and beyond.",
     brochureLink: "/OxERA-sales-clinical-brochure.pdf",
     clinicalLink: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9121766/#sec0003",
     features: [
@@ -22,7 +22,7 @@ const products = [
       "CE & SAHPRA considerations",
     ],
     image: oxeraProduct,
-    badge: "Flagship Product",
+    badge: "Available",
     badgeColor: "bg-primary/20 text-primary border-primary/30",
   },
   {
