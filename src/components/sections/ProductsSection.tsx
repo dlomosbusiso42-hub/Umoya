@@ -1,4 +1,5 @@
 import oxeraProduct from "@/assets/oxera-product.jpg";
+import maternaWellProduct from "@/assets/MartenaWell.png";
 import oxygenPlant from "@/assets/Oxygen Plant.jpg";
 import { Wind, Baby, TrendingUp, Factory, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -35,7 +36,7 @@ const products = [
       "Field hospital compatible",
       "Low maintenance",
     ],
-    image: null,
+    image: maternaWellProduct,
     badge: "In Development",
     badgeColor: "bg-amber-500/20 text-amber-400 border-amber-500/30",
   },
@@ -148,9 +149,64 @@ export default function ProductsSection() {
             </div>
           </div>
 
+          {/* MaternaWell — featured layout */}
+          <div className="grid lg:grid-cols-2 gap-10 items-center bg-card rounded-3xl border border-border p-8 md:p-12 shadow-lg">
+            <div>
+              <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold border ${products[1].badgeColor} mb-4`}>
+                {products[1].badge}
+              </span>
+              <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
+                {products[1].name}
+              </h3>
+              <p className="text-primary font-medium mb-4">{products[1].tagline}</p>
+              <p className="text-muted-foreground leading-relaxed mb-3">{products[1].description}</p>
+              {products[1].brochureLink && (
+                <p className="mb-6">
+                  <a
+                    href={products[1].brochureLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-primary underline hover:text-primary/80"
+                  >
+                    Download the MaternaWell brochure
+                  </a>
+                </p>
+              )}
+              {products[1].brochureLink && (
+                <div className="mb-8 rounded-xl border border-border overflow-hidden bg-white">
+                  <iframe
+                    src={products[1].brochureLink}
+                    title="MaternaWell brochure preview"
+                    className="w-full h-[420px]"
+                  />
+                </div>
+              )}
+              <ul className="space-y-2 mb-8">
+                {products[1].features.map((f) => (
+                  <li key={f} className="flex items-center gap-2 text-sm text-foreground">
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2">
+                Learn More <ArrowRight className="w-4 h-4" />
+              </Button>
+            </div>
+            <div className="relative flex flex-col gap-4">
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-2xl blur-xl pointer-events-none" />
+              <img
+                src={products[1].image}
+                alt="MaternaWell product render"
+                loading="lazy"
+                className="relative rounded-2xl w-full object-cover shadow-xl border border-border"
+              />
+            </div>
+          </div>
+
           {/* Other products */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {products.slice(1).map((p) => {
+            {products.slice(2).map((p) => {
               const Icon = p.icon;
               return (
                 <div
