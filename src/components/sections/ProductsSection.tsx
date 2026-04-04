@@ -49,7 +49,7 @@ const products = [
     tagline: "Oxygen Optimisation",
     description:
       "A solution focused on optimising oxygen delivery and usage efficiency in clinical settings. Critical for environments where oxygen supply is constrained — addressing one of the biggest challenges identified during the COVID-19 pandemic.",
-    brochureLink: null,
+    brochureLink: "/OptiRamp-brochure-A4-fold-2024-0724.pdf",
     features: [
       "Oxygen delivery optimisation",
       "Compatible with existing infrastructure",
@@ -274,6 +274,27 @@ export default function ProductsSection() {
               </h3>
               <p className="text-primary font-medium mb-4">{products[2].tagline}</p>
               <p className="text-muted-foreground leading-relaxed mb-6">{products[2].description}</p>
+              {products[2].brochureLink && (
+                <p className="mb-6">
+                  <a
+                    href={products[2].brochureLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-primary underline hover:text-primary/80"
+                  >
+                    Download the OptiRamp brochure
+                  </a>
+                </p>
+              )}
+              {products[2].brochureLink && (
+                <div className="mb-8 rounded-xl border border-border overflow-hidden bg-white">
+                  <iframe
+                    src={products[2].brochureLink}
+                    title="OptiRamp brochure preview"
+                    className="w-full h-[420px]"
+                  />
+                </div>
+              )}
               <ul className="space-y-2 mb-8">
                 {products[2].features.map((f) => (
                   <li key={f} className="flex items-center gap-2 text-sm text-foreground">
