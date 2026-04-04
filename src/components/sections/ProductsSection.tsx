@@ -118,6 +118,13 @@ export default function ProductsSection() {
                   Download the OxERA brochure
                 </a>
               </p>
+              <div className="mb-8 rounded-xl border border-border overflow-hidden bg-white">
+                <iframe
+                  src={products[0].brochureLink}
+                  title="OxERA brochure preview"
+                  className="w-full h-[420px]"
+                />
+              </div>
               <ul className="space-y-2 mb-8">
                 {products[0].features.map((f) => (
                   <li key={f} className="flex items-center gap-2 text-sm text-foreground">
@@ -172,6 +179,15 @@ export default function ProductsSection() {
                         Download the {p.name} brochure
                       </a>
                     </p>
+                  )}
+                  {p.brochureLink && (
+                    <div className="mb-5 rounded-xl border border-border overflow-hidden bg-white">
+                      <iframe
+                        src={p.brochureLink}
+                        title={`${p.name} brochure preview`}
+                        className="w-full h-[320px]"
+                      />
+                    </div>
                   )}
                   <ul className="space-y-1.5">
                     {p.features.map((f) => (
