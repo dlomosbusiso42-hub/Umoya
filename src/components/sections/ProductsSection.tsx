@@ -30,6 +30,7 @@ const products = [
     description:
       "A dedicated maternal healthcare product addressing critical gaps in obstetric and neonatal care within low-resource environments. Designed to improve outcomes for mothers and newborns where sophisticated equipment is unavailable.",
     brochureLink: "/MaternaWell-description-and-specification-Nov25.pdf",
+    instructionsLink: "/MaternaWell-instructions-for-use-v2.1.pdf",
     features: [
       "Maternal & neonatal care",
       "Affordable & portable",
@@ -169,6 +170,18 @@ export default function ProductsSection() {
                     className="text-primary underline hover:text-primary/80"
                   >
                     Download the MaternaWell brochure
+                  </a>
+                </p>
+              )}
+              {products[1].instructionsLink && (
+                <p className="mb-6">
+                  <a
+                    href={products[1].instructionsLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-primary underline hover:text-primary/80"
+                  >
+                    Download MaternaWell instructions for use
                   </a>
                 </p>
               )}
