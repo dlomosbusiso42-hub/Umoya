@@ -248,6 +248,16 @@ export default function ProductsSection() {
                   <h3 className="text-2xl font-bold text-foreground mb-1">{p.name}</h3>
                   <p className="text-primary text-sm font-medium mb-3">{p.tagline}</p>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-5">{p.description}</p>
+                  {p.image && (
+                    <div className="mb-5 rounded-xl border border-border overflow-hidden bg-white">
+                      <img
+                        src={p.image}
+                        alt={`${p.name} product`}
+                        loading="lazy"
+                        className="w-full h-48 object-cover"
+                      />
+                    </div>
+                  )}
                   {p.brochureLink && (
                     <p className="mb-5">
                       <a
