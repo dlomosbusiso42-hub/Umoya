@@ -1,4 +1,4 @@
-import { Mail, Wind } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function ContactSection() {
@@ -46,6 +46,30 @@ export default function ContactSection() {
                   <p className="text-white font-medium">info@umoya.org.za</p>
                 </div>
               </a>
+              <div className="flex items-start gap-4 p-4 bg-white/5 border border-white/10 rounded-xl">
+                <div className="w-10 h-10 rounded-lg bg-primary/20 border border-primary/30 flex items-center justify-center">
+                  <MapPin className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <p className="text-white/50 text-xs uppercase tracking-wide">Postal Address</p>
+                  <p className="text-white font-medium leading-relaxed">
+                    48 Via Ticino
+                    <br />
+                    Hornbill Road
+                    <br />
+                    Douglasdale
+                    <br />
+                    Gauteng
+                    <br />
+                    2191
+                  </p>
+                  <p className="text-white/70 text-sm mt-3 leading-relaxed">
+                    VAT: 4410280442
+                    <br />
+                    SAHPRA Licence number: 00002208MD
+                  </p>
+                </div>
+              </div>
             </div>
 
           </div>
