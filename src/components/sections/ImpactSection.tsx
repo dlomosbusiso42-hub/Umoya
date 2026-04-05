@@ -1,5 +1,5 @@
 import { MapPin, HeartHandshake, Zap, Globe2 } from "lucide-react";
-import sponsorImage from "@/assets/sponsor.png";
+import sponsorImage from "@/assets/partners/impact-sponsorship-2024.png";
 
 const impacts = [
   {
