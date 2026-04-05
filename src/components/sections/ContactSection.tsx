@@ -63,11 +63,6 @@ export default function ContactSection() {
                     <br />
                     2191
                   </p>
-                  <p className="text-white/70 text-sm mt-3 leading-relaxed">
-                    VAT: 4410280442
-                    <br />
-                    SAHPRA Licence number: 00002208MD
-                  </p>
                 </div>
               </div>
             </div>

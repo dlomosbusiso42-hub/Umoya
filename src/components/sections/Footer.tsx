@@ -28,7 +28,9 @@ export default function Footer() {
             </p>
             <p className="text-slate-500 text-xs">
               Umoya Org (Pty) Ltd<br />
-              Company Reg No: 2016/320695/07
+              Company Reg No: 2016/320695/07<br />
+              VAT: 4410280442<br />
+              SAHPRA Licence number: 00002208MD
             </p>
           </div>
 
