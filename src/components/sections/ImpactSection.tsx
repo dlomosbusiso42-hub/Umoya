@@ -1,4 +1,5 @@
 import { MapPin, HeartHandshake, Zap, Globe2 } from "lucide-react";
+import sponsorImage from "@/assets/sponsor.png";
 
 const impacts = [
   {
@@ -87,6 +88,18 @@ export default function ImpactSection() {
             );
           })}
         </div>
+
+        <figure className="mt-10 bg-white/5 border border-white/10 rounded-2xl p-4 md:p-6">
+          <img
+            src={sponsorImage}
+            alt="Umoya sponsorship highlights"
+            className="w-full rounded-xl border border-white/10 object-cover"
+            loading="lazy"
+          />
+          <figcaption className="text-white/80 text-sm md:text-base mt-4 leading-relaxed">
+            Umoya sponsored 6 medical students to attend. We are sending one to the Model United Nations Conference in S Korea.
+          </figcaption>
+        </figure>
       </div>
     </section>
   );
