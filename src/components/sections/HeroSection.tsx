@@ -6,7 +6,7 @@ import { ChevronDown, Stethoscope, Users, Globe } from "lucide-react";
 const stats = [
   { icon: Stethoscope, value: "3+", label: "Medical Products" },
   { icon: Users, value: "11+", label: "Team Specialists" },
-  { icon: Globe, value: "2+", label: "Countries Reached" },
+  { icon: Globe, value: "10+", label: "Countries Reached" },
 ];
 
 export default function HeroSection() {
