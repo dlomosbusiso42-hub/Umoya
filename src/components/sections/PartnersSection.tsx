@@ -1,4 +1,5 @@
 import { Handshake } from "lucide-react";
+import medfoxImage from "@/assets/team/MEDFOX-185-CTHS-A+-049.jpg";
 
 const partners = [
   {
@@ -62,6 +63,15 @@ export default function PartnersSection() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-10 rounded-2xl overflow-hidden border border-border bg-card">
+          <img
+            src={medfoxImage}
+            alt="Umoya team at partner engagement event"
+            className="w-full h-auto object-cover"
+            loading="lazy"
+          />
         </div>
 
         {/* Become a partner */}
