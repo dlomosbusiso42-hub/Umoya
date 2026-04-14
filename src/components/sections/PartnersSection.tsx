@@ -79,7 +79,7 @@ export default function PartnersSection() {
               key={p.id}
               className="bg-card border border-border rounded-2xl p-6 card-hover flex items-start gap-4 group"
             >
-              <div className="w-16 h-16 rounded-xl bg-white border border-border p-2 flex items-center justify-center flex-shrink-0 overflow-hidden">
+              <div className="w-24 h-20 md:w-28 md:h-24 rounded-xl bg-white border border-border p-3 flex items-center justify-center flex-shrink-0 overflow-hidden">
                 <img
                   src={p.logo}
                   alt={`${p.name} logo`}
