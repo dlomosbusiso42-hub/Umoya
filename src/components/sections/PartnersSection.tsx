@@ -1,30 +1,55 @@
 import { Handshake } from "lucide-react";
 import medfoxImage from "@/assets/team/MEDFOX-185-CTHS-A+-049.jpg";
+import vuumaLogo from "@/assets/partners/logos/vuuma_collaborations_logo.jpg";
+import inventEngineeringLogo from "@/assets/partners/logos/Invent Engineering Logo.png";
+import foxolutionLogo from "@/assets/partners/logos/Foxolution Logo.png";
+import gablerLogo from "@/assets/partners/logos/Gabler_Medical_Logo.jpg";
+import simineLogo from "@/assets/partners/logos/SIMINE Logo.jpg";
+import rightToCareLogo from "@/assets/partners/logos/Right To Care Logo.png";
+import usaidLogo from "@/assets/partners/logos/USAID Logo.jpg";
 
 const partners = [
   {
+    id: "vuuma",
     name: "Vuuma",
     description: "Strategic partner supporting Umoya's mission across South Africa.",
+    logo: vuumaLogo,
   },
   {
-    name: "Invent",
+    id: "invent-engineering",
+    name: "Invent Engineering",
     description: "Innovation partner providing engineering and design capabilities.",
+    logo: inventEngineeringLogo,
   },
   {
+    id: "foxolution",
+    name: "Foxolution",
+    description: "Technology partner strengthening Umoya's digital and product innovation capabilities.",
+    logo: foxolutionLogo,
+  },
+  {
+    id: "gabler",
     name: "Gabler",
     description: "Technical partner enabling manufacturing excellence.",
+    logo: gablerLogo,
   },
   {
+    id: "simine",
     name: "SiMINE",
     description: "Partner bringing mining and industrial expertise to healthcare solutions.",
+    logo: simineLogo,
   },
   {
+    id: "right-to-care",
     name: "Right to Care NPO",
     description: "NPO partner facilitating training and deployment across Southern Africa.",
+    logo: rightToCareLogo,
   },
   {
+    id: "usaid",
     name: "USAID",
     description: "Funding and support partner for the Madwaleni Hospital oxygen project.",
+    logo: usaidLogo,
   },
 ];
 
@@ -51,11 +76,17 @@ export default function PartnersSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {partners.map((p) => (
             <div
-              key={p.name}
+              key={p.id}
               className="bg-card border border-border rounded-2xl p-6 card-hover flex items-start gap-4 group"
             >
-              <div className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
-                <Handshake className="w-5 h-5 text-primary" />
+              <div className="w-16 h-16 rounded-xl bg-white border border-border p-2 flex items-center justify-center flex-shrink-0 overflow-hidden">
+                <img
+                  src={p.logo}
+                  alt={`${p.name} logo`}
+                  className="max-w-full max-h-full object-contain"
+                  loading="lazy"
+                  data-partner-logo={p.id}
+                />
               </div>
               <div>
                 <h3 className="font-bold text-foreground mb-1">{p.name}</h3>
