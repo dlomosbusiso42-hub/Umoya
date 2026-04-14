@@ -1,5 +1,6 @@
-import { MapPin, HeartHandshake, Zap, Globe2 } from "lucide-react";
+import { MapPin, HeartHandshake, Zap, Globe2, GraduationCap } from "lucide-react";
 import sponsorImage from "@/assets/partners/impact-sponsorship-2024.png";
+import medfoxImage from "@/assets/team/MEDFOX-185-CTHS-A+-049.jpg";
 
 const impacts = [
   {
@@ -8,6 +9,8 @@ const impacts = [
     location: "Eastern Cape, South Africa",
     description:
       "Designed, constructed, delivered and commissioned a containerised pressure swing adsorption (PSA) oxygen manufacturing plant at a remote rural hospital. The plant operates continuously, ensuring a steady affordable oxygen supply directly to wards and enabling cylinder filling for satellite clinics. Umoya remotely monitors performance and provides ongoing maintenance.",
+    image: medfoxImage,
+    imageAlt: "Madwaleni Hospital oxygen plant project team",
     highlight: "5-month project",
     partner: "Right to Care NPO & USAID",
   },
@@ -37,6 +40,19 @@ const impacts = [
       "Umoya has expanded its product offering to provide context-appropriate and affordable solutions to some of the greatest medical needs on the continent. Products and services are designed cognisant of the infrastructure and staffing constraints in low-resource settings while maintaining broad clinical appeal.",
     highlight: "Pan-African vision",
     partner: "Multiple partners",
+  },
+  {
+    icon: GraduationCap,
+    title: "Education",
+    location: "South Africa & International",
+    description:
+      "Umoya supports healthcare education by sponsoring medical students and creating opportunities for wider professional exposure.",
+    highlight: "6 students sponsored",
+    partner: "Rural Health Conference",
+    image: sponsorImage,
+    imageAlt: "Umoya sponsorship highlights",
+    caption:
+      "Umoya sponsored 6 medical students to attend. We are sending one to the Model United Nations Conference in S Korea.",
   },
 ];
 
@@ -78,6 +94,21 @@ export default function ImpactSection() {
                   </div>
                 </div>
                 <p className="text-white/65 text-sm leading-relaxed mb-5">{item.description}</p>
+                {item.image && (
+                  <figure className="mb-5 rounded-xl border border-white/10 bg-white/5 p-3">
+                    <img
+                      src={item.image}
+                      alt={item.imageAlt}
+                      className="w-full rounded-lg border border-white/10 object-cover"
+                      loading="lazy"
+                    />
+                    {item.caption && (
+                      <figcaption className="text-white/70 text-xs md:text-sm mt-3 leading-relaxed">
+                        {item.caption}
+                      </figcaption>
+                    )}
+                  </figure>
+                )}
                 <div className="flex items-center justify-between pt-4 border-t border-white/10">
                   <span className="text-primary text-xs font-semibold bg-primary/10 border border-primary/20 rounded-full px-3 py-1">
                     {item.highlight}
@@ -88,18 +119,6 @@ export default function ImpactSection() {
             );
           })}
         </div>
-
-        <figure className="mt-10 bg-white/5 border border-white/10 rounded-2xl p-4 md:p-6">
-          <img
-            src={sponsorImage}
-            alt="Umoya sponsorship highlights"
-            className="w-full rounded-xl border border-white/10 object-cover"
-            loading="lazy"
-          />
-          <figcaption className="text-white/80 text-sm md:text-base mt-4 leading-relaxed">
-            Umoya sponsored 6 medical students to attend. We are sending one to the Model United Nations Conference in S Korea.
-          </figcaption>
-        </figure>
       </div>
     </section>
   );

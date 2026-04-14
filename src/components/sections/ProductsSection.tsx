@@ -48,7 +48,7 @@ const products = [
     tagline: "Oxygen Optimisation",
     description:
       "A solution focused on optimising oxygen delivery and usage efficiency in clinical settings. Critical for environments where oxygen supply is constrained — addressing one of the biggest challenges identified during the COVID-19 pandemic.",
-    brochureLink: "/OptiRamp-brochure-A4-fold-2024-0724.pdf",
+    brochureLink: "/OptiRamp%20Brochure%20A4%20fold_2024_0724%20(1).pdf",
     features: [
       "Oxygen delivery optimisation",
       "Compatible with existing infrastructure",
@@ -187,6 +187,17 @@ export default function ProductsSection() {
                   />
                 </div>
               )}
+              <div className="mb-8 rounded-xl border border-border overflow-hidden bg-black">
+                <iframe
+                  src="https://www.youtube.com/embed/Y-1wpHRZTA4"
+                  title="MaternaWell product video"
+                  className="w-full h-[320px] md:h-[420px]"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
               <ul className="space-y-2 mb-8">
                 {products[1].features.map((f) => (
                   <li key={f} className="flex items-center gap-2 text-sm text-foreground">
