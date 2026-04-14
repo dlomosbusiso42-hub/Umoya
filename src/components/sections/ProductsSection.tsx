@@ -1,8 +1,7 @@
 import oxeraProduct from "@/assets/oxera-product.jpg";
 import maternaWellProduct from "@/assets/MartenaWell.png";
 import optiRampProduct from "@/assets/Opti-Ramp.png";
-import { Wind, Baby, TrendingUp, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Wind, Baby, TrendingUp } from "lucide-react";
 
 const products = [
   {
@@ -128,9 +127,6 @@ export default function ProductsSection() {
                   </li>
                 ))}
               </ul>
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2">
-                Learn More <ArrowRight className="w-4 h-4" />
-              </Button>
             </div>
             <div className="relative flex flex-col gap-4">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-2xl blur-xl pointer-events-none" />
@@ -206,9 +202,6 @@ export default function ProductsSection() {
                   </li>
                 ))}
               </ul>
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2">
-                Learn More <ArrowRight className="w-4 h-4" />
-              </Button>
             </div>
             <div className="relative flex flex-col gap-4">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-2xl blur-xl pointer-events-none" />
@@ -261,9 +254,6 @@ export default function ProductsSection() {
                   </li>
                 ))}
               </ul>
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2">
-                Learn More <ArrowRight className="w-4 h-4" />
-              </Button>
             </div>
             <div className="relative flex flex-col gap-4">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-2xl blur-xl pointer-events-none" />
