@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const quickFacts = [
-  { value: "4", label: "Core product lines" },
+  { value: "3", label: "Core product lines" },
   { value: "10+", label: "Countries reached" },
   { value: "11+", label: "Team specialists" },
 ];
@@ -56,7 +56,6 @@ export default function HomeOverviewSection() {
               "OxERA",
               "MaternaWell",
               "OptiRamp",
-              "Industrial Oxygen Plant",
             ].map((name) => (
               <div key={name} className="rounded-2xl border border-border bg-background p-5">
                 <p className="font-semibold text-foreground">{name}</p>
@@ -65,6 +64,27 @@ export default function HomeOverviewSection() {
           </div>
           <Button asChild variant="outline" className="border-primary/30 text-primary hover:bg-primary/10">
             <Link to="/products">Explore Products</Link>
+          </Button>
+        </div>
+
+        <div className="rounded-3xl border border-border bg-card p-8 md:p-10 shadow-sm">
+          <div className="flex items-center gap-3 mb-4">
+            <Package2 className="h-5 w-5 text-primary" />
+            <p className="text-primary text-sm font-semibold uppercase tracking-widest">Our Projects</p>
+          </div>
+          <h3 className="text-3xl font-bold text-foreground mb-4">Infrastructure delivery beyond individual products</h3>
+          <p className="text-muted-foreground leading-relaxed mb-8 max-w-3xl">
+            Umoya also delivers larger healthcare implementation work, including oxygen infrastructure projects that require design, installation, and long-term operational support.
+          </p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8 max-w-3xl">
+            {["Medical Oxygen Plant"].map((name) => (
+              <div key={name} className="rounded-2xl border border-border bg-background p-5">
+                <p className="font-semibold text-foreground">{name}</p>
+              </div>
+            ))}
+          </div>
+          <Button asChild variant="outline" className="border-primary/30 text-primary hover:bg-primary/10">
+            <Link to="/projects">Explore Projects</Link>
           </Button>
         </div>
 
@@ -120,6 +140,7 @@ export default function HomeOverviewSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
             { title: "Impact", href: "/impact" },
+            { title: "Projects", href: "/projects" },
             { title: "Team", href: "/team" },
             { title: "Partners", href: "/partners" },
             { title: "Contact", href: "/contact" },

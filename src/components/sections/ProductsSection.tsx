@@ -1,8 +1,7 @@
 import oxeraProduct from "@/assets/oxera-product.jpg";
 import maternaWellProduct from "@/assets/MartenaWell.png";
 import optiRampProduct from "@/assets/Opti-Ramp.png";
-import oxygenPlant from "@/assets/Oxygen Plant.jpg";
-import { Wind, Baby, TrendingUp, Factory, ArrowRight } from "lucide-react";
+import { Wind, Baby, TrendingUp, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const products = [
@@ -31,7 +30,7 @@ const products = [
     tagline: "Maternal Healthcare Solution",
     description:
       "A dedicated maternal healthcare product addressing critical gaps in obstetric and neonatal care within low-resource environments. Designed to improve outcomes for mothers and newborns where sophisticated equipment is unavailable.",
-    brochureLink: "/MaternaWell-description-and-specification-Nov25.pdf",
+    brochureLink: "/MaternaWell%20Tray_Updated_2025.pdf",
     instructionsLink: "/MaternaWell-instructions-for-use-v2.1.pdf",
     features: [
       "Maternal & neonatal care",
@@ -40,8 +39,8 @@ const products = [
       "Low maintenance",
     ],
     image: maternaWellProduct,
-    badge: "In Development",
-    badgeColor: "bg-amber-500/20 text-amber-400 border-amber-500/30",
+    badge: "Available",
+    badgeColor: "bg-primary/20 text-primary border-primary/30",
   },
   {
     icon: TrendingUp,
@@ -57,24 +56,6 @@ const products = [
       "Scalable deployment",
     ],
     image: optiRampProduct,
-    badge: "Available",
-    badgeColor: "bg-primary/20 text-primary border-primary/30",
-  },
-  {
-    icon: Factory,
-    name: "Industrial Oxygen Plant",
-    tagline: "PSA Oxygen Generation",
-    description:
-      "A complete oxygen generation infrastructure solution designed for healthcare facilities requiring on-site oxygen production. Our Industrial Oxygen Plant delivers cost-effective, reliable oxygen supply through pressure swing adsorption (PSA) technology, eliminating dependence on oxygen cylinders and reducing operational costs.",
-    brochureLink: null,
-    features: [
-      "On-site oxygen generation",
-      "PSA technology",
-      "Low maintenance operation",
-      "Complete installation support",
-      "Project management included",
-    ],
-    image: oxygenPlant,
     badge: "Available",
     badgeColor: "bg-primary/20 text-primary border-primary/30",
   },
@@ -229,40 +210,6 @@ export default function ProductsSection() {
             </div>
           </div>
 
-          {/* Industrial Oxygen Plant — featured layout */}
-          <div className="grid lg:grid-cols-2 gap-10 items-center bg-card rounded-3xl border border-border p-8 md:p-12 shadow-lg">
-            <div>
-              <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold border ${products[3].badgeColor} mb-4`}>
-                {products[3].badge}
-              </span>
-              <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-                {products[3].name}
-              </h3>
-              <p className="text-primary font-medium mb-4">{products[3].tagline}</p>
-              <p className="text-muted-foreground leading-relaxed mb-6">{products[3].description}</p>
-              <ul className="space-y-2 mb-8">
-                {products[3].features.map((f) => (
-                  <li key={f} className="flex items-center gap-2 text-sm text-foreground">
-                    <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0" />
-                    {f}
-                  </li>
-                ))}
-              </ul>
-              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground gap-2">
-                Learn More <ArrowRight className="w-4 h-4" />
-              </Button>
-            </div>
-            <div className="relative flex flex-col gap-4">
-              <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent rounded-2xl blur-xl pointer-events-none" />
-              <img
-                src={products[3].image}
-                alt="Industrial Oxygen Plant"
-                loading="lazy"
-                className="relative rounded-2xl w-full object-cover shadow-xl border border-border"
-              />
-            </div>
-          </div>
-
           {/* OptiRamp — featured layout */}
           <div className="grid lg:grid-cols-2 gap-10 items-center bg-card rounded-3xl border border-border p-8 md:p-12 shadow-lg">
             <div>
@@ -323,7 +270,7 @@ export default function ProductsSection() {
         <div className="mt-12 bg-[hsl(215,55%,10%)] border border-primary/20 rounded-2xl p-8 text-white">
           <h3 className="text-xl font-bold mb-2">Consulting Services & Project Management</h3>
           <p className="text-white/70 text-sm leading-relaxed max-w-3xl">
-            We offer a range of project management, training and consulting services focused on finding solutions and removing barriers in the delivery of community healthcare. These include the development of new cost-effective medical devices, products and the supply of oxygen infrastructure — including full PSA oxygen generation plant design, supply, installation and support.
+            We offer a range of project management, training and consulting services focused on finding solutions and removing barriers in the delivery of community healthcare. These include the development of new cost-effective medical devices, products, and broader implementation work that supports reliable oxygen infrastructure in low-resource settings.
           </p>
         </div>
       </div>
