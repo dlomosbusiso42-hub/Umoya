@@ -2,6 +2,9 @@ import oxeraProduct from "@/assets/oxera-product.jpg";
 import maternaWellProduct from "@/assets/MartenaWell.png";
 import optiRampProduct from "@/assets/Opti-Ramp.png";
 import { Wind, Baby, TrendingUp } from "lucide-react";
+import { Document, Page, pdfjs } from "react-pdf";
+
+pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 const products = [
   {
@@ -70,11 +73,16 @@ function BrochurePreview({
 }) {
   return (
     <div className="relative group mb-8 rounded-xl border border-border overflow-hidden bg-white">
-      <iframe
-        src={`${file}#page=1&toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
-        title={`${title} brochure preview`}
-        className="w-full h-[480px] pointer-events-none border-0"
-      />
+      <div className="h-[480px] overflow-hidden flex items-start justify-center bg-slate-100">
+        <Document
+          file={file}
+          loading={<div className="text-sm text-muted-foreground pt-6">Loading preview...</div>}
+          error={<div className="text-sm text-muted-foreground pt-6">Preview unavailable</div>}
+          noData={<div className="text-sm text-muted-foreground pt-6">No preview file found</div>}
+        >
+          <Page pageNumber={1} width={620} renderAnnotationLayer={false} renderTextLayer={false} />
+        </Document>
+      </div>
       <a
         href={`${file}#page=1`}
         target="_blank"
