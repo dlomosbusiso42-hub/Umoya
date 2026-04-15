@@ -2,6 +2,11 @@ import oxeraProduct from "@/assets/oxera-product.jpg";
 import maternaWellProduct from "@/assets/MartenaWell.png";
 import optiRampProduct from "@/assets/Opti-Ramp.png";
 import { Wind, Baby, TrendingUp } from "lucide-react";
+import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import "react-pdf/dist/esm/Page/TextLayer.css";
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL("pdfjs-dist/build/pdf.worker.min.mjs", import.meta.url).toString();
 
 const products = [
   {
@@ -60,6 +65,40 @@ const products = [
     badgeColor: "bg-primary/20 text-primary border-primary/30",
   },
 ];
+
+function BrochurePreview({
+  file,
+  title,
+}: {
+  file: string;
+  title: string;
+}) {
+  return (
+    <div className="relative group mb-8 rounded-xl border border-border overflow-hidden bg-white">
+      <div className="h-[420px] overflow-hidden flex items-start justify-center bg-slate-100">
+        <Document
+          file={file}
+          loading={<div className="text-sm text-muted-foreground pt-6">Loading preview...</div>}
+          error={<div className="text-sm text-muted-foreground pt-6">Preview unavailable</div>}
+          noData={<div className="text-sm text-muted-foreground pt-6">No preview file found</div>}
+        >
+          <Page pageNumber={1} width={620} renderAnnotationLayer={false} renderTextLayer={false} />
+        </Document>
+      </div>
+      <a
+        href={`${file}#page=1`}
+        target="_blank"
+        rel="noreferrer"
+        className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/40 transition-all duration-300"
+        aria-label={`Download ${title} brochure`}
+      >
+        <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary text-white px-5 py-2.5 rounded-full font-semibold text-sm">
+          Download Brochure ↗
+        </span>
+      </a>
+    </div>
+  );
+}
 
 export default function ProductsSection() {
   return (
@@ -121,23 +160,7 @@ export default function ProductsSection() {
                   </div>
                 </a>
               </div>
-              <div className="relative group mb-8 rounded-xl border border-border overflow-hidden bg-white">
-                <iframe
-                  src={`${products[0].brochureLink}#page=1&toolbar=0&navpanes=0&scrollbar=0`}
-                  title="OxERA brochure preview"
-                  className="w-full h-[420px] pointer-events-none"
-                />
-                <a
-                  href={products[0].brochureLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/40 transition-all duration-300"
-                >
-                  <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary text-white px-5 py-2.5 rounded-full font-semibold text-sm">
-                    Download Brochure ↗
-                  </span>
-                </a>
-              </div>
+              <BrochurePreview file={products[0].brochureLink} title={products[0].name} />
               <ul className="space-y-2 mb-8">
                 {products[0].features.map((f) => (
                   <li key={f} className="flex items-center gap-2 text-sm text-foreground">
@@ -182,23 +205,7 @@ export default function ProductsSection() {
                 </p>
               )}
               {products[1].brochureLink && (
-                <div className="relative group mb-8 rounded-xl border border-border overflow-hidden bg-white">
-                  <iframe
-                    src={`${products[1].brochureLink}#page=1&toolbar=0&navpanes=0&scrollbar=0`}
-                    title="MaternaWell brochure preview"
-                    className="w-full h-[420px] pointer-events-none"
-                  />
-                  <a
-                    href={products[1].brochureLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/40 transition-all duration-300"
-                  >
-                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary text-white px-5 py-2.5 rounded-full font-semibold text-sm">
-                      Download Brochure ↗
-                    </span>
-                  </a>
-                </div>
+                <BrochurePreview file={products[1].brochureLink} title={products[1].name} />
               )}
               <div className="mb-8 rounded-xl border border-border overflow-hidden bg-black">
                 <iframe
@@ -243,23 +250,7 @@ export default function ProductsSection() {
               <p className="text-primary font-medium mb-4">{products[2].tagline}</p>
               <p className="text-muted-foreground leading-relaxed mb-6">{products[2].description}</p>
               {products[2].brochureLink && (
-                <div className="relative group mb-8 rounded-xl border border-border overflow-hidden bg-white">
-                  <iframe
-                    src={`${products[2].brochureLink}#page=1&toolbar=0&navpanes=0&scrollbar=0`}
-                    title="OptiRamp brochure preview"
-                    className="w-full h-[420px] pointer-events-none"
-                  />
-                  <a
-                    href={products[2].brochureLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/40 transition-all duration-300"
-                  >
-                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary text-white px-5 py-2.5 rounded-full font-semibold text-sm">
-                      Download Brochure ↗
-                    </span>
-                  </a>
-                </div>
+                <BrochurePreview file={products[2].brochureLink} title={products[2].name} />
               )}
               <ul className="space-y-2 mb-8">
                 {products[2].features.map((f) => (
