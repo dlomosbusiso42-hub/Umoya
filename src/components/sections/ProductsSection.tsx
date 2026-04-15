@@ -13,7 +13,7 @@ const products = [
     brochureLink: "/OxERA-sales-clinical-brochure.pdf",
     clinicalLink: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9121766/#sec0003",
     features: [
-      "CPAP / non invasive ventilation",
+      "Positive expiratory pressure/ non invasive ventilation",
       "Designed for low resource settings",
       "Oxygen efficient design",
       "Simple assembly & operation",
@@ -35,7 +35,8 @@ const products = [
       "Maternal & neonatal care",
       "Affordable & portable",
       "Field hospital compatible",
-      "Low maintenance",
+      "Real time monitoring",
+      "Reusable",
     ],
     image: maternaWellProduct,
     badge: "Available",
@@ -44,15 +45,15 @@ const products = [
   {
     icon: TrendingUp,
     name: "OptiRamp",
-    tagline: "Oxygen Optimisation",
+    tagline: "Optimise Alignment. Improve Airway Success",
     description:
-      "A solution focused on optimising oxygen delivery and usage efficiency in clinical settings. Critical for environments where oxygen supply is constrained, addressing one of the biggest challenges identified during the COVID-19 pandemic.",
+      "The OptiRamp was developed to provide a simple, stable ramping solution, adequate for most patients' profiles.",
     brochureLink: "/OptiRamp%20Brochure%20A4%20fold_2024_0724%20(1).pdf",
     features: [
-      "Oxygen delivery optimisation",
-      "Compatible with existing infrastructure",
-      "Real time monitoring",
-      "Scalable deployment",
+      "Simple, stable, adequate for most patient profiles",
+      "Can be easily disinfected",
+      "Covered in a robust material and water resistant",
+      "Durable and long lasting",
     ],
     image: optiRampProduct,
     badge: "Available",
@@ -92,32 +93,50 @@ export default function ProductsSection() {
               </h3>
               <p className="text-primary font-medium mb-4">{products[0].tagline}</p>
               <p className="text-muted-foreground leading-relaxed mb-3">{products[0].description}</p>
-              <p className="mb-6">
-                <a
-                  href={products[0].brochureLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-primary underline hover:text-primary/80"
-                >
-                  Download the OxERA brochure
-                </a>
-              </p>
-              <p className="mb-6">
+              <div className="relative group mb-6 rounded-xl border border-border overflow-hidden bg-card cursor-pointer">
                 <a
                   href={products[0].clinicalLink}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-primary underline hover:text-primary/80"
+                  className="block p-5"
                 >
-                  View OxERA clinical article
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                      </svg>
+                    </div>
+                    <div className="min-w-0">
+                      <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-1">PubMed Central · Clinical Article</p>
+                      <p className="text-sm font-semibold text-foreground leading-snug mb-1">
+                        OxERA: A Low-Cost CPAP Device for Use in Low-Resource Settings
+                      </p>
+                      <p className="text-xs text-muted-foreground">PMC9121766 · Respiratory Medicine</p>
+                    </div>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/40 transition-all duration-300 rounded-xl">
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary text-white px-5 py-2.5 rounded-full font-semibold text-sm">
+                      View Article ↗
+                    </span>
+                  </div>
                 </a>
-              </p>
-              <div className="mb-8 rounded-xl border border-border overflow-hidden bg-white">
+              </div>
+              <div className="relative group mb-8 rounded-xl border border-border overflow-hidden bg-white">
                 <iframe
-                  src={products[0].brochureLink}
+                  src={`${products[0].brochureLink}#page=1&toolbar=0&navpanes=0&scrollbar=0`}
                   title="OxERA brochure preview"
-                  className="w-full h-[420px]"
+                  className="w-full h-[420px] pointer-events-none"
                 />
+                <a
+                  href={products[0].brochureLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/40 transition-all duration-300"
+                >
+                  <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary text-white px-5 py-2.5 rounded-full font-semibold text-sm">
+                    Download Brochure ↗
+                  </span>
+                </a>
               </div>
               <ul className="space-y-2 mb-8">
                 {products[0].features.map((f) => (
@@ -150,18 +169,6 @@ export default function ProductsSection() {
               </h3>
               <p className="text-primary font-medium mb-4">{products[1].tagline}</p>
               <p className="text-muted-foreground leading-relaxed mb-3">{products[1].description}</p>
-              {products[1].brochureLink && (
-                <p className="mb-6">
-                  <a
-                    href={products[1].brochureLink}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-primary underline hover:text-primary/80"
-                  >
-                    Download the MaternaWell brochure
-                  </a>
-                </p>
-              )}
               {products[1].instructionsLink && (
                 <p className="mb-6">
                   <a
@@ -175,12 +182,22 @@ export default function ProductsSection() {
                 </p>
               )}
               {products[1].brochureLink && (
-                <div className="mb-8 rounded-xl border border-border overflow-hidden bg-white">
+                <div className="relative group mb-8 rounded-xl border border-border overflow-hidden bg-white">
                   <iframe
-                    src={products[1].brochureLink}
+                    src={`${products[1].brochureLink}#page=1&toolbar=0&navpanes=0&scrollbar=0`}
                     title="MaternaWell brochure preview"
-                    className="w-full h-[420px]"
+                    className="w-full h-[420px] pointer-events-none"
                   />
+                  <a
+                    href={products[1].brochureLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/40 transition-all duration-300"
+                  >
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary text-white px-5 py-2.5 rounded-full font-semibold text-sm">
+                      Download Brochure ↗
+                    </span>
+                  </a>
                 </div>
               )}
               <div className="mb-8 rounded-xl border border-border overflow-hidden bg-black">
@@ -226,24 +243,22 @@ export default function ProductsSection() {
               <p className="text-primary font-medium mb-4">{products[2].tagline}</p>
               <p className="text-muted-foreground leading-relaxed mb-6">{products[2].description}</p>
               {products[2].brochureLink && (
-                <p className="mb-6">
+                <div className="relative group mb-8 rounded-xl border border-border overflow-hidden bg-white">
+                  <iframe
+                    src={`${products[2].brochureLink}#page=1&toolbar=0&navpanes=0&scrollbar=0`}
+                    title="OptiRamp brochure preview"
+                    className="w-full h-[420px] pointer-events-none"
+                  />
                   <a
                     href={products[2].brochureLink}
                     target="_blank"
                     rel="noreferrer"
-                    className="text-primary underline hover:text-primary/80"
+                    className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/40 transition-all duration-300"
                   >
-                    Download the OptiRamp brochure
+                    <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary text-white px-5 py-2.5 rounded-full font-semibold text-sm">
+                      Download Brochure ↗
+                    </span>
                   </a>
-                </p>
-              )}
-              {products[2].brochureLink && (
-                <div className="mb-8 rounded-xl border border-border overflow-hidden bg-white">
-                  <iframe
-                    src={products[2].brochureLink}
-                    title="OptiRamp brochure preview"
-                    className="w-full h-[420px]"
-                  />
                 </div>
               )}
               <ul className="space-y-2 mb-8">
