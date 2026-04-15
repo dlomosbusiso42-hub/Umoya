@@ -17,7 +17,7 @@ export default function ContactSection() {
               <span className="text-gradient-teal">For Better Healthcare</span>
             </h2>
             <p className="text-white/65 text-lg leading-relaxed mb-8">
-              Whether you're a healthcare facility, potential partner, or supporter — we would love to hear from you. Umoya solutions are available across South Africa and beyond.
+              Whether you're a healthcare facility, potential partner, or supporter, we would love to hear from you. Umoya solutions are available across South Africa and beyond.
             </p>
 
             {/* Contact info */}
@@ -69,7 +69,7 @@ export default function ContactSection() {
 
           </div>
 
-          {/* Right — Contact form */}
+          {/* Right contact form */}
           <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
             <h3 className="text-white font-bold text-xl mb-6">Send a Message</h3>
             <form

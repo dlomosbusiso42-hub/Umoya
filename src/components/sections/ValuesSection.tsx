@@ -4,7 +4,7 @@ const values = [
   {
     icon: Shield,
     title: "Integrity",
-    description: "We are committed to being ethical in all we do — from product design to how we interact with partners, patients, and communities.",
+    description: "We are committed to being ethical in all we do, from product design to how we interact with partners, patients, and communities.",
     color: "from-blue-500/20 to-blue-600/5",
     iconBg: "bg-blue-500/20 border-blue-500/30",
     iconColor: "text-blue-400",
@@ -20,7 +20,7 @@ const values = [
   {
     icon: Heart,
     title: "People Before Profits",
-    description: "We are passionate about who we are, what we stand for and the products we produce. All trading surplus is reinvested — never distributed as dividends.",
+    description: "We are passionate about who we are, what we stand for and the products we produce. All trading surplus is reinvested, never distributed as dividends.",
     color: "from-rose-500/20 to-rose-600/5",
     iconBg: "bg-rose-500/20 border-rose-500/30",
     iconColor: "text-rose-400",
@@ -28,7 +28,7 @@ const values = [
   {
     icon: Users2,
     title: "Inclusiveness",
-    description: "We believe everyone in all parts of our business has something valuable to contribute — from doctors to engineers, designers to 3D printing specialists.",
+    description: "We believe everyone in all parts of our business has something valuable to contribute, from doctors to engineers, designers to 3D printing specialists.",
     color: "from-amber-500/20 to-amber-600/5",
     iconBg: "bg-amber-500/20 border-amber-500/30",
     iconColor: "text-amber-400",
@@ -50,7 +50,7 @@ export default function ValuesSection() {
             Our <span className="text-gradient-teal">Core Values</span>
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto text-lg">
-            The principles that guide every decision we make — from product design to community engagement.
+            The principles that guide every decision we make, from product design to community engagement.
           </p>
         </div>
 
@@ -78,9 +78,9 @@ export default function ValuesSection() {
           <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-primary/10" />
           <div className="relative">
             <p className="text-2xl md:text-3xl font-bold text-white mb-3">
-              "Our purpose is to bring context-appropriate medical technology to the market at affordable prices."
+              "Our purpose is to bring context appropriate medical technology to the market at affordable prices."
             </p>
-            <p className="text-white/50 text-sm">— Umoya Purpose Statement</p>
+            <p className="text-white/50 text-sm">Umoya Purpose Statement</p>
           </div>
         </div>
       </div>

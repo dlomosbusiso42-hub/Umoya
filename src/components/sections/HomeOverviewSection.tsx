@@ -19,10 +19,10 @@ export default function HomeOverviewSection() {
             <p className="text-primary text-sm font-semibold uppercase tracking-widest mb-3">Who is Umoya?</p>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">A collective solving real healthcare challenges</h2>
             <p className="text-muted-foreground leading-relaxed mb-5">
-              Umoya brings together engineers, doctors, designers, and technical teams to develop context-appropriate medical technology at affordable prices.
+              Umoya brings together engineers, doctors, designers, and technical teams to develop context appropriate medical technology at affordable prices.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              We started in East London during the COVID-19 crisis and expanded across South Africa as a mission-led social enterprise focused on effectiveness, availability, and affordability.
+              We started in East London during the COVID-19 crisis and expanded across South Africa as a mission led social enterprise focused on effectiveness, availability, and affordability.
             </p>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
               <Link to="/about">Learn More About Umoya</Link>
@@ -47,7 +47,7 @@ export default function HomeOverviewSection() {
             <Package2 className="h-5 w-5 text-primary" />
             <p className="text-primary text-sm font-semibold uppercase tracking-widest">Our Products</p>
           </div>
-          <h3 className="text-3xl font-bold text-foreground mb-4">Built for resource-constrained environments</h3>
+          <h3 className="text-3xl font-bold text-foreground mb-4">Built for resource constrained environments</h3>
           <p className="text-muted-foreground leading-relaxed mb-8 max-w-3xl">
             From respiratory care to maternal and infant support, our product portfolio is designed for practical deployment in healthcare systems where reliability and affordability matter most.
           </p>

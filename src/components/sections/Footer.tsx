@@ -25,7 +25,7 @@ export default function Footer() {
               <span className="text-orange-900 font-bold text-xl tracking-tight">UMOYA</span>
             </div>
             <p className="text-slate-600 text-sm leading-relaxed mb-5 max-w-xs">
-              A social enterprise bringing context-appropriate medical technology to low-resource settings across Africa. Innovation in the Air.
+              A social enterprise bringing context appropriate medical technology to low resource settings across Africa. Innovation in the Air.
             </p>
             <p className="text-slate-500 text-xs">
               Umoya Org (Pty) Ltd<br />

@@ -9,13 +9,13 @@ const products = [
     name: "OxERA™",
     tagline: "Respiratory Support Device",
     description:
-      "The OxERA™ is a non-invasive respiratory support device designed to assist patients with breathing difficulties. It bridges the gap in respiratory therapy for resource-constrained healthcare facilities across Africa and beyond.",
+      "The OxERA™ is a non invasive respiratory support device designed to assist patients with breathing difficulties. It bridges the gap in respiratory therapy for resource constrained healthcare facilities across Africa and beyond.",
     brochureLink: "/OxERA-sales-clinical-brochure.pdf",
     clinicalLink: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9121766/#sec0003",
     features: [
-      "CPAP / non-invasive ventilation",
-      "Designed for low-resource settings",
-      "Oxygen-efficient design",
+      "CPAP / non invasive ventilation",
+      "Designed for low resource settings",
+      "Oxygen efficient design",
       "Simple assembly & operation",
       "CE & SAHPRA considerations",
     ],
@@ -28,7 +28,7 @@ const products = [
     name: "MaternaWell",
     tagline: "Maternal Healthcare Solution",
     description:
-      "A dedicated maternal healthcare product addressing critical gaps in obstetric and neonatal care within low-resource environments. Designed to improve outcomes for mothers and newborns where sophisticated equipment is unavailable.",
+      "A dedicated maternal healthcare product addressing critical gaps in obstetric and neonatal care within low resource environments. Designed to improve outcomes for mothers and newborns where sophisticated equipment is unavailable.",
     brochureLink: "/MaternaWell%20Tray_Updated_2025.pdf",
     instructionsLink: "/MaternaWell-instructions-for-use-v2.1.pdf",
     features: [
@@ -46,12 +46,12 @@ const products = [
     name: "OptiRamp",
     tagline: "Oxygen Optimisation",
     description:
-      "A solution focused on optimising oxygen delivery and usage efficiency in clinical settings. Critical for environments where oxygen supply is constrained — addressing one of the biggest challenges identified during the COVID-19 pandemic.",
+      "A solution focused on optimising oxygen delivery and usage efficiency in clinical settings. Critical for environments where oxygen supply is constrained, addressing one of the biggest challenges identified during the COVID-19 pandemic.",
     brochureLink: "/OptiRamp%20Brochure%20A4%20fold_2024_0724%20(1).pdf",
     features: [
       "Oxygen delivery optimisation",
       "Compatible with existing infrastructure",
-      "Real-time monitoring",
+      "Real time monitoring",
       "Scalable deployment",
     ],
     image: optiRampProduct,
@@ -72,16 +72,16 @@ export default function ProductsSection() {
             <span className="h-px w-12 bg-primary" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            Context-Appropriate <span className="text-gradient-teal">Medical Technology</span>
+            Context Appropriate <span className="text-gradient-teal">Medical Technology</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Bridging gaps in current healthcare therapy with cost-effective alternatives designed for the realities of low-resource clinical environments.
+            Bridging gaps in current healthcare therapy with cost effective alternatives designed for the realities of low resource clinical environments.
           </p>
         </div>
 
         {/* Products */}
         <div className="space-y-12">
-          {/* OxERA — featured */}
+          {/* OxERA featured */}
           <div className="grid lg:grid-cols-2 gap-10 items-center bg-card rounded-3xl border border-border p-8 md:p-12 shadow-lg">
             <div>
               <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold border ${products[0].badgeColor} mb-4`}>
@@ -139,7 +139,7 @@ export default function ProductsSection() {
             </div>
           </div>
 
-          {/* MaternaWell — featured layout */}
+          {/* MaternaWell featured layout */}
           <div className="grid lg:grid-cols-2 gap-10 items-center bg-card rounded-3xl border border-border p-8 md:p-12 shadow-lg">
             <div>
               <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold border ${products[1].badgeColor} mb-4`}>
@@ -214,7 +214,7 @@ export default function ProductsSection() {
             </div>
           </div>
 
-          {/* OptiRamp — featured layout */}
+          {/* OptiRamp featured layout */}
           <div className="grid lg:grid-cols-2 gap-10 items-center bg-card rounded-3xl border border-border p-8 md:p-12 shadow-lg">
             <div>
               <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold border ${products[2].badgeColor} mb-4`}>
@@ -271,7 +271,7 @@ export default function ProductsSection() {
         <div className="mt-12 bg-[hsl(215,55%,10%)] border border-primary/20 rounded-2xl p-8 text-white">
           <h3 className="text-xl font-bold mb-2">Consulting Services & Project Management</h3>
           <p className="text-white/70 text-sm leading-relaxed max-w-3xl">
-            We offer a range of project management, training and consulting services focused on finding solutions and removing barriers in the delivery of community healthcare. These include the development of new cost-effective medical devices, products, and broader implementation work that supports reliable oxygen infrastructure in low-resource settings.
+            We offer a range of project management, training and consulting services focused on finding solutions and removing barriers in the delivery of community healthcare. These include the development of new cost effective medical devices, products, and broader implementation work that supports reliable oxygen infrastructure in low resource settings.
           </p>
         </div>
       </div>

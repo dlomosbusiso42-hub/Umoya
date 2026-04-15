@@ -19,7 +19,7 @@ const team = [
   { name: "Harry Sinko", role: "Systems Engineering & Project Management", department: "Systems", photo: harrySinko },
   { name: "Antony Mello", role: "Operations Strategy", department: "Operations", photo: antonyMello },
   { name: "Alex Rossouw", role: "Design Engineer", department: "Design", photo: alexRossouw },
-  { name: "Frans-Meyer van der Merwe", role: "Design Engineer", department: "Design", photo: fransMeyer },
+  { name: "Frans Meyer van der Merwe", role: "Design Engineer", department: "Design", photo: fransMeyer },
   { name: "Lindley Barkhuyzen", role: "Design Engineer", department: "Design", photo: lindleyBarkhuyzen },
   { name: "Tyran Tesmer", role: "3D Printing Support", department: "Manufacturing", photo: tyranTesmer },
 ];

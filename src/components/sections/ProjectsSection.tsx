@@ -8,9 +8,9 @@ const projects = [
     name: "Medical Oxygen Plant",
     tagline: "PSA Oxygen Generation Project",
     description:
-      "A complete oxygen generation infrastructure project for healthcare facilities requiring dependable on-site oxygen production. Umoya supports the design, supply, installation, and long-term operational setup of PSA oxygen generation systems to reduce dependence on cylinders and improve continuity of care.",
+      "A complete oxygen generation infrastructure project for healthcare facilities requiring dependable on site oxygen production. Umoya supports the design, supply, installation, and long term operational setup of PSA oxygen generation systems to reduce dependence on cylinders and improve continuity of care.",
     features: [
-      "On-site oxygen generation",
+      "On site oxygen generation",
       "PSA technology",
       "Design, supply, and installation",
       "Low maintenance operation",

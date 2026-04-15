@@ -36,7 +36,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-lg md:text-xl text-orange-900/75 max-w-2xl leading-relaxed">
-          A collective of engineers, doctors & designers delivering context-appropriate medical technology at affordable prices for resource-constrained environments globally.
+          A collective of engineers, doctors & designers delivering context appropriate medical technology at affordable prices for resource constrained environments globally.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mt-2">

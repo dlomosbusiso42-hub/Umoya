@@ -67,7 +67,7 @@ export default function PartnersSection() {
             Built on <span className="text-gradient-teal">Strong Partnerships</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Our collaborative network spans engineering firms, NGOs, and international development organisations — all united by a shared commitment to better healthcare.
+            Our collaborative network spans engineering firms, NGOs, and international development organisations, all united by a shared commitment to better healthcare.
           </p>
         </div>
 

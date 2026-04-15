@@ -19,16 +19,16 @@ export default function AboutSection() {
             </h2>
             <div className="space-y-5 text-muted-foreground leading-relaxed">
               <p>
-                The <strong className="text-foreground">UMOYA project</strong> originated during the COVID-19 pandemic when a significant gap emerged in the provision of respiratory care across South Africa and other developing countries. A dedicated group of individuals — mechanical engineers, doctors, designers, 3D printing specialists, and project managers — voluntarily came together to address this crisis.
+                The <strong className="text-foreground">UMOYA project</strong> originated during the COVID-19 pandemic when a significant gap emerged in the provision of respiratory care across South Africa and other developing countries. A dedicated group of individuals, mechanical engineers, doctors, designers, 3D printing specialists, and project managers, voluntarily came together to address this crisis.
               </p>
               <p>
                 The initial recognition came from our team's doctors, <strong className="text-foreground">Dr Craig Parker</strong> and <strong className="text-foreground">Dr Brendan Toy</strong>, based in ICU and anaesthetic departments of state hospitals in the Eastern Cape. The team rapidly iterated through concepts, producing a working prototype within <strong className="text-foreground">2 weeks</strong> and a finalised design within <strong className="text-foreground">7 weeks</strong>.
               </p>
               <p>
-                Umoya is a registered South African social enterprise (<strong className="text-foreground">Umoya Org (Pty) Ltd; Reg No: 2016/320695/07</strong>). We reinvest 100% of our trading surplus into developing new products or donating to organisations with similar objectives — we do not distribute dividends to shareholders.
+                Umoya is a registered South African social enterprise (<strong className="text-foreground">Umoya Org (Pty) Ltd; Reg No: 2016/320695/07</strong>). We reinvest 100% of our trading surplus into developing new products or donating to organisations with similar objectives, and we do not distribute dividends to shareholders.
               </p>
               <p>
-                Today, we have expanded across South Africa with manufacturing and technical expertise spread nationwide, continuously exploring context-appropriate medical solutions for our continent.
+                Today, we have expanded across South Africa with manufacturing and technical expertise spread nationwide, continuously exploring context appropriate medical solutions for our continent.
               </p>
             </div>
 
@@ -64,7 +64,7 @@ export default function AboutSection() {
               <p className="text-sm text-white/80 italic leading-relaxed">
                 "Our mission is to increase the effectiveness, availability and affordability of health care devices."
               </p>
-              <p className="text-primary text-xs font-semibold mt-2 uppercase tracking-wide">— Umoya Mission</p>
+              <p className="text-primary text-xs font-semibold mt-2 uppercase tracking-wide">Umoya Mission</p>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ import medfoxImage from "@/assets/team/MEDFOX-185-CTHS-A+-049.jpg";
 const impacts = [
   {
     icon: MapPin,
-    title: "Madwaleni Hospital — PSA Oxygen Plant",
+    title: "Madwaleni Hospital PSA Oxygen Plant",
     location: "Eastern Cape, South Africa",
     description:
       "Designed, constructed, delivered and commissioned a containerised pressure swing adsorption (PSA) oxygen manufacturing plant at a remote rural hospital. The plant operates continuously, ensuring a steady affordable oxygen supply directly to wards and enabling cylinder filling for satellite clinics. Umoya remotely monitors performance and provides ongoing maintenance.",
@@ -16,11 +16,11 @@ const impacts = [
   },
   {
     icon: HeartHandshake,
-    title: "Healthcare Worker Training — eSwatini",
+    title: "Healthcare Worker Training eSwatini",
     location: "Eswatini (in partnership with Right to Care NPO)",
     description:
-      "Right to Care procured several OxERA™ units for Swaziland. Umoya compiled and delivered a concise two-day training course covering device assembly, patient management, troubleshooting clinical scenarios, and off-label use for non-COVID pneumonia patients. Attendees left empowered to maximise device effectiveness.",
-    highlight: "2-day training program",
+      "Right to Care procured several OxERA™ units for Swaziland. Umoya compiled and delivered a concise two day training course covering device assembly, patient management, troubleshooting clinical scenarios, and off label use for non COVID-19 pneumonia patients. Attendees left empowered to maximise device effectiveness.",
+    highlight: "2 day training program",
     partner: "Right to Care NPO",
   },
   {
@@ -28,17 +28,17 @@ const impacts = [
     title: "National Ventilator Project",
     location: "South Africa",
     description:
-      "Initially aligned with the National Ventilator Project during COVID-19. The team's doctors quickly identified that simpler, more affordable designs could achieve equally good clinical outcomes. This philosophy drove the development of the OxERA™ — reducing ICU load and enabling treatment in field and district hospitals.",
-    highlight: "7-week design cycle",
+      "Initially aligned with the National Ventilator Project during COVID-19. The team's doctors quickly identified that simpler, more affordable designs could achieve equally good clinical outcomes. This philosophy drove the development of the OxERA™, reducing ICU load and enabling treatment in field and district hospitals.",
+    highlight: "7 week design cycle",
     partner: "National Initiative",
   },
   {
     icon: Globe2,
     title: "Expanding Across the Continent",
-    location: "Sub-Saharan Africa",
+    location: "Sub Saharan Africa",
     description:
-      "Umoya has expanded its product offering to provide context-appropriate and affordable solutions to some of the greatest medical needs on the continent. Products and services are designed cognisant of the infrastructure and staffing constraints in low-resource settings while maintaining broad clinical appeal.",
-    highlight: "Pan-African vision",
+      "Umoya has expanded its product offering to provide context appropriate and affordable solutions to some of the greatest medical needs on the continent. Products and services are designed cognisant of the infrastructure and staffing constraints in low resource settings while maintaining broad clinical appeal.",
+    highlight: "Pan African vision",
     partner: "Multiple partners",
   },
   {
@@ -64,14 +64,14 @@ export default function ImpactSection() {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-3 mb-4">
             <span className="h-px w-12 bg-primary" />
-            <span className="text-primary text-sm font-semibold uppercase tracking-widest">Real-World Impact</span>
+            <span className="text-primary text-sm font-semibold uppercase tracking-widest">Real World Impact</span>
             <span className="h-px w-12 bg-primary" />
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Making a Difference <span className="text-gradient-teal">On the Ground</span>
           </h2>
           <p className="text-white/60 max-w-2xl mx-auto text-lg">
-            From remote rural hospitals to cross-border training programs — real projects that have saved lives and transformed healthcare delivery.
+            From remote rural hospitals to cross border training programs, real projects that have saved lives and transformed healthcare delivery.
           </p>
         </div>
 
