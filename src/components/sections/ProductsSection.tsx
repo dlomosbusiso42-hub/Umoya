@@ -1,6 +1,7 @@
 import oxeraProduct from "@/assets/oxera-product.jpg";
 import maternaWellProduct from "@/assets/MartenaWell.png";
 import optiRampProduct from "@/assets/Opti-Ramp.png";
+import { useEffect, useRef, useState } from "react";
 import { Wind, Baby, TrendingUp } from "lucide-react";
 import { Document, Page, pdfjs } from "react-pdf";
 
@@ -71,16 +72,38 @@ function BrochurePreview({
   file: string;
   title: string;
 }) {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const [pageWidth, setPageWidth] = useState(620);
+
+  useEffect(() => {
+    const element = containerRef.current;
+    if (!element) {
+      return;
+    }
+
+    const updateWidth = () => {
+      const nextWidth = Math.min(Math.max(element.clientWidth - 24, 0), 620);
+      setPageWidth(nextWidth || 620);
+    };
+
+    updateWidth();
+
+    const observer = new ResizeObserver(() => updateWidth());
+    observer.observe(element);
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="relative group mb-8 rounded-xl border border-border overflow-hidden bg-white">
-      <div className="h-[480px] overflow-hidden flex items-start justify-center bg-slate-100">
+      <div ref={containerRef} className="h-[480px] overflow-hidden flex items-start justify-center bg-slate-100 px-3">
         <Document
           file={file}
           loading={<div className="text-sm text-muted-foreground pt-6">Loading preview...</div>}
           error={<div className="text-sm text-muted-foreground pt-6">Preview unavailable</div>}
           noData={<div className="text-sm text-muted-foreground pt-6">No preview file found</div>}
         >
-          <Page pageNumber={1} width={620} renderAnnotationLayer={false} renderTextLayer={false} />
+          <Page pageNumber={1} width={pageWidth} renderAnnotationLayer={false} renderTextLayer={false} />
         </Document>
       </div>
       <a
