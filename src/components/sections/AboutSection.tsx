@@ -83,7 +83,7 @@ export default function AboutSection() {
             </p>
             <div className="rounded-2xl overflow-hidden border border-border bg-black shadow-xl aspect-video">
               <iframe
-                src="https://www.youtube.com/embed/VSXknl0qXTM"
+                src="https://www.youtube.com/embed/zhumqsbFzKE"
                 title="Umoya video"
                 className="w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
