@@ -238,6 +238,16 @@ export default function ProductsSection() {
                   </a>
                 </p>
               )}
+              <p className="mb-6">
+                <a
+                  href="https://www.americares.org/news/tools-training-help-midwife-save-a-life-in-liberia/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-primary underline hover:text-primary/80"
+                >
+                  Read: Tools, training help midwife save a life in Liberia
+                </a>
+              </p>
               {products[1].brochureLink && (
                 <BrochurePreview file={products[1].brochureLink} title={products[1].name} />
               )}
