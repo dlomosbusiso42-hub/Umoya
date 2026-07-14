@@ -24,10 +24,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-orange-200/80 via-white/80 to-white" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center flex flex-col items-center gap-8 pt-24">
-        <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-orange-100 border border-orange-200 text-orange-900 text-sm font-medium backdrop-blur-sm">
-          <span className="w-2 h-2 rounded-full bg-orange-500 animate-pulse" />
-          Innovation in the Air
-        </span>
+        <p className="text-sm font-medium text-orange-900">Innovation in the Air</p>
 
         <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold text-orange-950 leading-tight tracking-tight">
           Breathing Life Into
