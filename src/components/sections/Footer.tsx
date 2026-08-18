@@ -34,11 +34,11 @@ export default function Footer() {
               VAT: 4410280442<br />
               SAHPRA Licence number: 00002208MD
             </p>
-            <div className="mt-4 inline-flex h-20 w-20 items-center justify-center overflow-hidden rounded-full border border-orange-100 bg-white shadow-sm">
+            <div className="mt-4 inline-flex h-24 w-24 items-center justify-center overflow-hidden rounded-full border border-orange-100 bg-white shadow-sm p-2.5">
               <img
                 src={sancertLogo}
                 alt="SANCERT certification logo"
-                className="h-full w-full object-cover object-center scale-110"
+                className="h-full w-full object-cover object-center scale-105"
               />
             </div>
           </div>
