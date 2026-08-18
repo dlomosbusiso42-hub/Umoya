@@ -1,5 +1,6 @@
 import { NavLink } from "@/components/NavLink";
 import { Wind, Mail } from "lucide-react";
+import sancertLogo from "@/assets/SANCERT.png";
 
 export default function Footer() {
   const links = [
@@ -33,6 +34,13 @@ export default function Footer() {
               VAT: 4410280442<br />
               SAHPRA Licence number: 00002208MD
             </p>
+            <div className="mt-4 inline-flex h-20 w-20 items-center justify-center overflow-hidden rounded-full border border-orange-100 bg-white shadow-sm">
+              <img
+                src={sancertLogo}
+                alt="SANCERT certification logo"
+                className="h-full w-full object-cover object-center scale-110"
+              />
+            </div>
           </div>
 
           <div>
