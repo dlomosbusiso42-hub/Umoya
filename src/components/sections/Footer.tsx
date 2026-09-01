@@ -1,6 +1,6 @@
 import { NavLink } from "@/components/NavLink";
 import { Wind, Mail } from "lucide-react";
-import sancertLogo from "@/assets/SANCERT.png";
+import certificationCertificate from "@/assets/UmoyaOrg ISO 13485-2016- Certificate 1 of 3 (2026) - Updated.pdf";
 
 export default function Footer() {
   const links = [
@@ -35,11 +35,18 @@ export default function Footer() {
               SAHPRA Licence number: 00002208MD
             </p>
             <div className="mt-4 inline-flex h-24 w-24 items-center justify-center overflow-hidden rounded-full border border-orange-100 bg-white shadow-sm p-2.5">
-              <img
-                src={sancertLogo}
-                alt="SANCERT certification logo"
-                className="h-full w-full object-cover object-center scale-105"
-              />
+              <object
+                data={certificationCertificate}
+                type="application/pdf"
+                aria-label="Umoya ISO 13485 certification certificate"
+                className="h-full w-full rounded-full object-cover object-center"
+              >
+                <img
+                  src={certificationCertificate}
+                  alt="Umoya ISO 13485 certification certificate"
+                  className="h-full w-full rounded-full object-cover object-center scale-105"
+                />
+              </object>
             </div>
           </div>
 
