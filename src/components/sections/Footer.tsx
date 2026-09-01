@@ -34,18 +34,16 @@ export default function Footer() {
               VAT: 4410280442<br />
               SAHPRA Licence number: 00002208MD
             </p>
-            <div className="mt-4 inline-flex h-24 w-24 items-center justify-center overflow-hidden rounded-full border border-orange-100 bg-white shadow-sm p-2.5">
+            <div className="mt-5 w-full max-w-[320px] overflow-hidden rounded-xl border border-orange-100 bg-white shadow-sm p-2">
               <object
                 data={certificationCertificate}
                 type="application/pdf"
                 aria-label="Umoya ISO 13485 certification certificate"
-                className="h-full w-full rounded-full object-cover object-center"
+                className="block h-[220px] w-full rounded-md bg-white"
               >
-                <img
-                  src={certificationCertificate}
-                  alt="Umoya ISO 13485 certification certificate"
-                  className="h-full w-full rounded-full object-cover object-center scale-105"
-                />
+                <div className="flex h-[220px] items-center justify-center rounded-md border border-dashed border-orange-200 bg-orange-50 px-4 text-center text-[11px] font-medium text-slate-600">
+                  Umoya ISO 13485 certification document
+                </div>
               </object>
             </div>
           </div>
