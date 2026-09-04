@@ -34,11 +34,11 @@ export default function Footer() {
               VAT: 4410280442<br />
               SAHPRA Licence number: 00002208MD
             </p>
-            <div className="mt-5 w-full overflow-hidden rounded-xl border border-orange-100 bg-white shadow-sm p-2">
+            <div className="mt-5 w-fit max-w-[180px] overflow-hidden rounded-xl border border-orange-100 bg-white shadow-sm p-2">
               <img
                 src={certificationCertificate}
                 alt="Umoya ISO 13485 certification certificate"
-                className="block h-auto max-h-[520px] w-full rounded-md object-contain"
+                className="block h-auto max-h-[180px] max-w-full rounded-md object-contain"
               />
             </div>
           </div>
