@@ -6,6 +6,7 @@ import gablerLogo from "@/assets/partners/logos/Gabler_Medical_Logo.jpg";
 import simineLogo from "@/assets/partners/logos/SIMINE Logo.jpg";
 import rightToCareLogo from "@/assets/partners/logos/Right To Care Logo.png";
 import usaidLogo from "@/assets/partners/logos/USAID Logo.jpg";
+import maternovaLogo from "@/assets/Maternova.png";
 
 const partners = [
   {
@@ -49,6 +50,12 @@ const partners = [
     name: "USAID",
     description: "Funding and support partner for the Madwaleni Hospital oxygen project.",
     logo: usaidLogo,
+  },
+  {
+    id: "maternova",
+    name: "Maternova",
+    description: "Global strategic partner on the manufacture, distribution and sales of the MaternaWell Tray.",
+    logo: maternovaLogo,
   },
 ];
 
